@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
+using System.Diagnostics; // Used for launching processes (like File Explorer).
 using System.IO;
 using System.Threading;
 using WindowsInput;
@@ -14,6 +14,7 @@ class Program
         string filePath = Path.Combine(folderPath, "Welcome.txt");
         string content = "Welcome to Trumpf Metamation!"; // Content to write in the file.
 
+
         try
         {
             // Step 1: Open File Explorer and navigate to C:\
@@ -27,13 +28,42 @@ class Program
             inputSimulator.Keyboard.ModifiedKeyStroke(
                 new[] { VirtualKeyCode.CONTROL, VirtualKeyCode.SHIFT }, // Hold Ctrl and Shift keys
                 VirtualKeyCode.VK_N // Press 'N' key
+
             );
+            Thread.Sleep(1000);
+            inputSimulator.Keyboard.TextEntry("TrumpfMetamation");
+            inputSimulator.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            Thread.Sleep(1000);
 
-            Console.WriteLine("Keyboard shortcut 'Ctrl+Shift+N' pressed to create a new folder.");
-            Console.WriteLine("Please rename the folder to 'TrumpfMetamation' manually and press Enter.");
-            Console.ReadLine(); // Pauses to allow the user to rename the folder.
+            ////Navigate into the folder
+            inputSimulator.Keyboard.TextEntry(folderPath + "{ENTER}");
+            Thread.Sleep(1000);
 
-            // Verify if the folder is correctly renamed
+            inputSimulator.Keyboard.ModifiedKeyStroke(VirtualKeyCode.MENU, VirtualKeyCode.VK_F);
+            Thread.Sleep(1000);//allow time 
+
+            inputSimulator.Keyboard.TextEntry("W");
+            Thread.Sleep(1000);
+            inputSimulator.Keyboard.TextEntry(filePath);
+            inputSimulator.Keyboard.KeyPress(VirtualKeyCode.RETURN);
+            Thread.Sleep(1000);
+            //write conntent
+            Process.Start("notepad.exe", filePath);
+            Thread.Sleep(1000);
+            inputSimulator.Keyboard.TextEntry(content);
+            inputSimulator.Keyboard.ModifiedKeyStroke(VirtualKeyCode.MENU, VirtualKeyCode.F4); 
+            Thread.Sleep(1000);
+
+
+
+
+
+
+            //Console.WriteLine("Keyboard shortcut 'Ctrl+Shift+N' pressed to create a new folder.");
+            //Console.WriteLine("Please rename the folder to 'TrumpfMetamation' manually and press Enter.");
+           // Console.ReadLine(); // Pauses to allow the user to rename the folder.
+
+            //Verify if the folder is correctly renamed
             if (!Directory.Exists(folderPath))
             {
                 Console.WriteLine($"Folder '{folderPath}' not found. Please ensure the folder is renamed correctly.");
@@ -42,8 +72,8 @@ class Program
 
             // Step 3: Create Welcome.txt file inside the folder
             // Write the predefined content into a new file within the created folder.
-            File.WriteAllText(filePath, content);
-            Console.WriteLine($"File created: {filePath}");
+            //File.WriteAllText(filePath, content);
+            //Console.WriteLine($"File created: {filePath}");
 
             // Step 4: Verify the content of the file
             // Read the file content and verify it matches the expected content.
@@ -59,15 +89,15 @@ class Program
 
             // Step 5: Delete the file
             // Deletes the file created in the folder.
-            File.Delete(filePath);
-            Console.WriteLine($"File deleted: {filePath}");
+            //File.Delete(filePath);
+            //Console.WriteLine($"File deleted: {filePath}");
 
-            // Step 6: Delete the folder
-            // Deletes the folder created earlier.
-            Directory.Delete(folderPath);
-            Console.WriteLine($"Folder deleted: {folderPath}");
+            //// Step 6: Delete the folder
+            //// Deletes the folder created earlier.
+            //Directory.Delete(folderPath);
+            //Console.WriteLine($"Folder deleted: {folderPath}");
 
-            // Step 7: Confirm deletion
+            //// Step 7: Confirm deletion
             // Verify that the folder no longer exists.
             if (!Directory.Exists(folderPath))
             {
