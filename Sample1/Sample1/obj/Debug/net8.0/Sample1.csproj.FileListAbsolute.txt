@@ -16,3 +16,13 @@ C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\refint\Sample1.dll
 C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\Sample1.pdb
 C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\Sample1.genruntimeconfig.cache
 C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\ref\Sample1.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\selenium-manager\linux\selenium-manager
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\selenium-manager\macos\selenium-manager
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\selenium-manager\windows\selenium-manager.exe
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\Appium.Net.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\WebDriver.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\System.Drawing.Common.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\bin\Debug\net8.0\runtimes\win\lib\net8.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\Interop.UIAutomationClient.dll
+C:\Users\dundi\source\repos\Sample1\Sample1\obj\Debug\net8.0\Sample1.csproj.ResolveComReference.cache

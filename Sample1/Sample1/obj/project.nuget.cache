@@ -1,11 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "nu4Zch5woBk=",
+  "dgSpecHash": "7hls6n5wVfs=",
   "success": true,
   "projectFilePath": "C:\\Users\\dundi\\source\\repos\\Sample1\\Sample1\\Sample1.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\dundi\\.nuget\\packages\\appium.webdriver\\6.0.1\\appium.webdriver.6.0.1.nupkg.sha512",
     "C:\\Users\\dundi\\.nuget\\packages\\inputsimulator\\1.0.4\\inputsimulator.1.0.4.nupkg.sha512",
-    "C:\\Users\\dundi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512"
+    "C:\\Users\\dundi\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.21.0\\microsoft.visualstudio.azure.containers.tools.targets.1.21.0.nupkg.sha512",
+    "C:\\Users\\dundi\\.nuget\\packages\\microsoft.win32.systemevents\\8.0.0\\microsoft.win32.systemevents.8.0.0.nupkg.sha512",
+    "C:\\Users\\dundi\\.nuget\\packages\\selenium.webdriver\\4.27.0\\selenium.webdriver.4.27.0.nupkg.sha512",
+    "C:\\Users\\dundi\\.nuget\\packages\\system.drawing.common\\8.0.10\\system.drawing.common.8.0.10.nupkg.sha512"
   ],
   "logs": [
     {
